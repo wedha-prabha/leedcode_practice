@@ -12,7 +12,7 @@ class Solution:
 
 
 nums = [2, 7, 11, 15]
-target = 9
+target = 8
 
 solution = Solution()
 print(solution.twoSum(nums, target))
