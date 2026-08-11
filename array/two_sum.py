@@ -1,18 +1,10 @@
 class Solution:
     def twoSum(self, nums, target):
-        num_map = {}
-
+        hashmap = {}
+        
         for i in range(len(nums)):
-            complement = target - nums[i]
-
-            if complement in num_map:
-                return [num_map[complement], i]
-
-            num_map[nums[i]] = i
-
-
-nums = [2, 7, 11, 15]
-target = 8
-
-solution = Solution()
-print(solution.twoSum(nums, target))
+            needed = target - nums[i]
+            
+            if needed in hashmap:
+                return [hashmap[needed], i]
+            hashmap[nums[i]] = i
